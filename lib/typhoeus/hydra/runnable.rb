@@ -14,6 +14,8 @@ module Typhoeus
         dequeue_many
         multi.perform
       end
+      
+      alias_method 'hail!', 'run'
     end
   end
 end
