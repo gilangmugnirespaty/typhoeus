@@ -15,7 +15,7 @@ Parallel requests:
 ```ruby
 hydra = Typhoeus::Hydra.new
 10.times.map{ hydra.queue(Typhoeus::Request.new("www.example.com", followlocation: true)) }
-hydra.run
+hydra.hail!
 ```
 
 ## Installation
